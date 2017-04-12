@@ -3,5 +3,5 @@ os: linux
 
 hooks:
   ApplicationStart:
-  - location: docs-stag-push.sh
+  - location: docs-push.sh
     runas: rawengwww
