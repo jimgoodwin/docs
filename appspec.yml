@@ -1,6 +1,15 @@
 version: 0.0
 os: linux
 
+files:
+  - source: docs-push.sh
+    destination: /home/rawengwww/temp
+permissions:
+  - object: /home/rawengwww/temp/docs-push.sh
+    owner: rawengwww
+    group: rawengwww
+mode: 775
+
 hooks:
   ApplicationStart:
   - location: docs-push.sh
